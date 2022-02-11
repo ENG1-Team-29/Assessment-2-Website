@@ -15,4 +15,4 @@ Our team name is shard software
 5. Jiahao Shang
 6. Ben Faulkner
 
-![mario](/img/mario.jpg)
+![shard software](/img/shard-software-logo4.png)
