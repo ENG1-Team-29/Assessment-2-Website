@@ -2,17 +2,17 @@
 layout: default
 ---
 
-# ENG1 Team Website
+# ENG1 Team Website Assessment 2
 
 ## Team Info
-Our team name is mario
+Our team name is shard software
 
 ## Team Members
-1. Anna 
-2. Saj
-3. Joe
-4. Leif
-5. Hugo
-6. Lucy
+1. James Burnell
+2. Hector Woods
+3. Jensen Bradshaw
+4. Adam Leuty
+5. Jiahao Shang
+6. Ben Faulkner
 
 ![mario](/img/mario.jpg)
