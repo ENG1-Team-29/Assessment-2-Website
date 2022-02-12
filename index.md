@@ -1,10 +1,3 @@
----
-layout: default
----
-
-# About Us
-Link to project: [Assessment-2](https://github.com/ENG1-Team-29/Assessment-2)
-
 ## Meet The Team
 [James Burnell](https://github.com/uoy-jb2501) <br />
 [Hector Woods](https://github.com/HectorJVWoods) <br />
