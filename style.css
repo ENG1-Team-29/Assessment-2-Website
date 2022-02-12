@@ -1,0 +1,90 @@
+:root {
+    --header-color: #393939;
+    --back-color: #141516;
+    --page-color: #181a1b;
+    --link-color: #946dec;
+    --text-color: #e8e6e3;
+    --pad-size: 20%;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+html {
+    background-color: var(--page-color);
+    font-size: large;
+}
+
+body {
+    color: lightgray;
+    background-color: var(--back-color);
+    padding-left: 1em;
+    padding-right: 1em;
+    min-width: 800px;
+    margin-left: var(--pad-size);
+    margin-right: var(--pad-size);
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    min-height: calc(100vh - 2em);
+    display: flex;
+    flex-direction: column;
+}
+
+nav, h1, h2, h3 {
+    padding-left: 1em;
+    background-image: linear-gradient(to right, var(--header-color) 50%, var(--back-color));
+    margin-right: 1%;
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+
+nav {
+    padding: 10px;
+}
+
+nav a {
+    color: var(--text-color);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+}
+
+nav a:hover {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+    margin-top: auto;
+    font-size: small;
+}
+
+/* Hotizontal Labels */
+#chart_div svg g:nth-child(3) text {
+    fill: var(--text-color);
+}
+
+/* Rows Odd */
+#chart_div svg g:nth-child(3) rect:nth-child(odd) {
+    fill: rgba(0, 0, 0, 0.1);
+}
+
+/* Rows Even */
+#chart_div svg g:nth-child(3) rect:nth-child(even) {
+    fill: transparent;
+}
