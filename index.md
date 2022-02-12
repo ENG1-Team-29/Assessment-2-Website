@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# ENG1 Team Website Assessment 2
+# ENG1 Assessment 2
 
 ## Team Info
 Our team name is shard software
