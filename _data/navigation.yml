@@ -1,6 +1,8 @@
-# Site navigation links
+docs_list_title: Shard Software
+docs:
+
 - title: Home
   url: /
 
-- title: Snapshots
-  url: /snapshots/
+- title: Deliverables
+  url: /Deliverables/
