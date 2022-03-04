@@ -1,0 +1,43 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Shard Software</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+	<nav>
+	<ul>
+		{% for item in site.data.menu %}
+		<li><a class="{% if page.url == item.link %}active{% endif %}" href="{{item.link}}">{{item.title}}</a></li>
+		{% endfor %}}
+	</ul>
+	</nav>
+	
+{{content}}
+
+<style>
+	nav ul {
+		display: flex;
+		list-style: none;
+	}
+	nav ul li {
+		margin-right: 10px;
+		text-decoration: none;
+	}
+	nav ul li a {
+		text-decoration: none;
+		color: green;
+	}
+	nav ul li a:hover {
+		text-decoration: underline;
+	}
+	.active {
+		text-decoration: unerline;
+	}
+</style>
+
+</body>
+</html>
