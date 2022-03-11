@@ -8,16 +8,21 @@
 		<link rel="icon" type="image/x-icon" href="img/favicon.ico">
 		<link rel="stylesheet" href="/assets/css/style.css">
 	</head>
-	<body>
-		<nav>
-			<ul>
-				{% for item in site.data.menu %}
-				<li><a class="{% if page.url == item.link %}active{% endif %}" href="{{item.link}}">{{item.title}}</a></li>
-				{% endfor %}
-			</ul>
-		</nav>
-		
-	{{content}}
 
+	<body>
+		<header>
+			<div class="container">
+				<a id="a-title" href="{{ '/' | relative_url }}">
+					<h1>{{ site.title | default: site.github.repository_name }}</h1>
+				</a>
+				{% include navigation.html %}
+			</div>
+		</header>
+	
+		<div class="container">
+			<section id="main_content">
+				{{ content }}
+			</section>
+		</div>
 	</body>
 </html>
