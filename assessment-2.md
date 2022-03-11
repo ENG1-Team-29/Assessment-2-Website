@@ -18,18 +18,20 @@ permalink: /assessment-2/
 
 These are the weekly snapshots for our Gantt Chart, the more full a bar is, the more complete the task is.
 
-### 07-03-2022
+### 07-03-22
 
-![gantt chart for 07-03-2022](/img/snapshots/07-03-22.png)
+We have decided to increase website development due to unforseen issues with Jekyll themes.
 
-### 28-02-2022
+![gantt chart for 07-03-22](/img/snapshots/07-03-22.png)
 
-![gantt chart for 28-02-2022](/img/snapshots/28-02-22.png)
+### 28-02-22
 
-### 21-02-2022
+![gantt chart for 28-02-22](/img/snapshots/28-02-22.png)
 
-![gantt chart for 21-02-2022](/img/snapshots/21-02-22.png)
+### 21-02-22
 
-### 14-02-2022
+![gantt chart for 21-02-22](/img/snapshots/21-02-22.png)
 
-![gantt chart for 14-02-2022](/img/snapshots/14-02-22.png)
+### 14-02-22
+
+![gantt chart for 14-02-22](/img/snapshots/14-02-22.png)
