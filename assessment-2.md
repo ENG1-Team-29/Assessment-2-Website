@@ -13,3 +13,23 @@ permalink: /assessment-2/
 ## Source Code
 
 [Source Code](https://github.com/ENG1-Team-29/Assessment-2)
+
+## Weekly Gantt Chart Snapshots
+
+These are the weekly snapshots for our Gantt Chart, the more full a bar is, the more complete the task is.
+
+### 07-03-2022
+
+![gantt chart for 07-03-2022](/img/snapshots/07-03-22.png)
+
+### 28-02-2022
+
+![gantt chart for 28-02-2022](/img/snapshots/28-02-22.png)
+
+### 21-02-2022
+
+![gantt chart for 21-02-2022](/img/snapshots/21-02-22.png)
+
+### 14-02-2022
+
+![gantt chart for 14-02-2022](/img/snapshots/14-02-22.png)
