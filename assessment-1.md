@@ -24,46 +24,46 @@ The executable jar file available in the project root (marrrio.jar)
 
 These are the weekly snapshots for our Gantt Chart, the more full a bar is, the more complete the task is.
 
-### 28-01-2022
+### 28-01-22
 
 we are now just finishing up the last bit of documentation
 
-![gantt chart for 28_01_2022](/img/snapshots/28-01-22.png))
+![gantt chart for 28-01-22](/img/snapshots/28-01-22.png)
 
-### 21-01-2022
+### 21-01-22
 
-![gantt chart for 21_01_2022](/img/snapshots/21-01-22.png)
+![gantt chart for 21-01-22](/img/snapshots/21-01-22.png)
 
-### 14-01-2022
+### 14-01-22
 
 After exams week, this is the status of the project, with more work planned to be done in the following week
 
-![gantt chart for 14_01_2022](/img/snapshots/14-01-22.png)
+![gantt chart for 14-01-22](/img/snapshots/14-01-22.png)
 
-### 07-01-2022
+### 07-01-22
 
 After a christmas break, this is the state of the project as we begin implementation
 
-![gantt chart for 7_01_2022](/img/snapshots/07-01-22.png)
+![gantt chart for 07-01-22](/img/snapshots/07-01-22.png)
 
-### 17-12-2021
+### 17-12-21
 
 We have rescheduled the latter half of architecture (the concrete part) to 
 during implementation as it cannot be done at the moment.
 
-![gantt chart for 17_12_2021](/img/snapshots/17-12-21.png)
+![gantt chart for 17-12-21](/img/snapshots/17-12-21.png)
 
-### 10-12-2021
+### 10-12-21
 Method Selection & Planning has been given an earlier start date as 4a is now complete, while we are waiting on the completion of 3a to begin work on 3b.
 
-![gantt chart for 10_12_2021](/img/snapshots/10-12-21.png)
+![gantt chart for 10-12-21](/img/snapshots/10-12-21.png)
 
-### 03-12-2021
+### 03-12-21
 The interview planning & the interview itself has been completed.
 
-![gantt chart for 3_12_2021](/img/snapshots/30-12-21.png)
+![gantt chart for 03-12-21](/img/snapshots/03-12-21.png)
 
-### 26-11-2021
+### 26-11-21
 
-![gantt chart for 26_11_2021](/img/snapshots/26-11-21.png)
+![gantt chart for 26-11-21](/img/snapshots/26-11-21.png)
 
