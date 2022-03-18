@@ -18,6 +18,12 @@ permalink: /assessment-2/
 
 These are the weekly snapshots for our Gantt Chart, the more full a bar is, the more complete the task is.
 
+### 14-03-22
+
+We have finished developing the website so that it is easy to update throughout the project and have implemented github actions to run tests on the code.
+
+![gantt chart for 14-03-22](/img/snapshots/14-03-22.png)
+
 ### 07-03-22
 
 We have decided to increase website development due to unforseen issues with Jekyll themes.
