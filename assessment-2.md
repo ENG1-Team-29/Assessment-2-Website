@@ -10,6 +10,11 @@ permalink: /assessment-2/
 [Testing](https://docs.google.com/document/d/14p1r_HZkSboNIkHY6SrWJnr87kKzKhqXc0rLkRQXc-c/edit?usp=sharing) <br />
 [Continuous Integration](https://docs.google.com/document/d/1URBOpzM-_sJvHf0VjJiVFmzWCubWWfXAmavQols3ZT0/edit?usp=sharing)
 
+[Updated Requirements](https://docs.google.com/document/d/1reFE4AyFq2MmoC6-BC4cxDrsp30229z8x1OinBAUK4g/edit?usp=sharing) <br />
+[Updated Architecture](https://docs.google.com/document/d/17Iw9TVWA2Zbt7RSxYuHKW_WeUvk7BZW_dXOHOOvAEIs/edit?usp=sharing) <br />
+[Updated Method Selection & Planning](https://docs.google.com/document/d/1FhnTvtkPFI7qnTZMOmHF039lDpX0cqr8xuI-_lTJ54o/edit?usp=sharing) <br />
+[Updated Risk Assessment](https://docs.google.com/document/d/1lW_p9v4pXOmkDZ1XTupeFcbQuhjPCJ4jCDCN_vLW3Fw/edit?usp=sharing)
+
 ## Source Code
 
 [Source Code](https://github.com/ENG1-Team-29/Assessment-2)
