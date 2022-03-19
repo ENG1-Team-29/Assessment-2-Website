@@ -7,3 +7,5 @@ layout: default
 [![GitHub all releases](https://img.shields.io/github/downloads/ENG1-Team-29/Assessment-2/total)](https://github.com/ENG1-Team-29/Assessment-2/releases){:target="_blank"}
 
 # Home
+
+![mario](/img/mario.jpg)
