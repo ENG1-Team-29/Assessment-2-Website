@@ -23,6 +23,12 @@ permalink: /assessment-2/
 
 These are the weekly snapshots for our Gantt Chart, the more full a bar is, the more complete the task is.
 
+### 18-05-22
+
+Over the easter break we almost finished implementation and testing. We renamed the continuous integration section on the chart as it reflects better what we meant by it.
+
+![gantt chart for 18-05-22](/img/snapshots/18-05-22.png)
+
 ### 14-03-22
 
 We have finished developing the website so that it is easy to update throughout the project and have implemented github actions to run tests on the code.
