@@ -7,6 +7,8 @@ permalink: /testing/
 [![Java CI with Gradle](https://github.com/ENG1-Team-29/Assessment-2/actions/workflows/gradle.yml/badge.svg?branch=master)](https://github.com/ENG1-Team-29/Assessment-2/actions/workflows/gradle.yml){:target="_blank"}
 [![codecov](https://codecov.io/gh/ENG1-Team-29/Assessment-2/branch/master/graph/badge.svg?token=D2BMT48XY9)](https://codecov.io/gh/ENG1-Team-29/Assessment-2)
 
+This section covers information regarding our approach and results for Continuous Integration and general testing.
+
 ## Unit Testing
 Unit tests are run with github actions whenever a change is made to the master branch or when a pull request is made. Continuous Integration testing can be found on the github actions page: [Java CI with Gradle](https://github.com/ENG1-Team-29/Assessment-2/actions/workflows/gradle.yml){:target="_blank"} <br />
 By entering one of the workflow runs, you will see the test results such as the example below:
@@ -22,4 +24,43 @@ During development of the game, we used code coverage reports to inspect what co
 <p align="center">
     <a href="https://app.codecov.io/gh/ENG1-Team-29/Assessment-2" target="_blank"><img src="https://codecov.io/gh/ENG1-Team-29/Assessment-2/branch/master/graphs/sunburst.svg" alt="current coverage sunburt graph"></a><br>
     <span>Current Test Coverage</span>
- </p>
+</p>
+
+## Manual Testing
+Unit tests are good for automation, but not everything can be tested automatically. The project needs to be manually reviewed to ensure the game is playable and meets the requirements. As such, we undertook manual testing along the development process of the project. We gave each test a unique ID (starting with ``MT_``) to make it easy to reference as needed.
+
+Below is the latest test report:
+
+<div align="center">
+    <table id="results">
+    </table>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+        function insertCsvToTable(data) {
+            var allRows = data.split(/\r?\n|\r/); // get all csv lines
+            var tableData = "";
+            for(var i = 0; i < allRows.length; i++) { // go through all rows
+                tableData += "<tr>";
+                rowData = allRows[i].split(",");
+                for(var j = 0; j < rowData.length; j++) { // go through all columns
+                    if (i == 0) { // add header
+                        tableData += "<th>";
+                        tableData += rowData[j];
+                        tableData += "</th>";
+                    } else { // add data
+                        tableData += "<td>";
+                        tableData += rowData[j];
+                        tableData += "</td>";
+                    }
+                }
+                tableData += "</tr>";
+            }
+            $("#results").append(tableData);
+        }
+        $.ajax({
+            url: '/manual-testing.csv',
+            dataType: 'text',
+        }).done(insertCsvToTable);
+    </script>
+</div>
+

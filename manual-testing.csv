@@ -1,0 +1,5 @@
+Test ID,Description,Associated Requirement,Result
+MT_TIMER_DECREASE,Does the game timer decrease with time,UR_WIN_TIME,PASS
+MT_GAME_TIME_WINNABLE,Can the game actually be won within the time limit,UR_WIN_TIME,PASS
+MT_FINAL_OBJECTIVE,Can the central college be defeated,UR_WIN_TIME,PASS
+MT_FINAL_OBJECTIVE_BLOCKED,Is the central college protected until all other objectives completed,UR_WIN_TIME,PASS
