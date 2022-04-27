@@ -49,7 +49,7 @@ By entering one of the workflow runs, you will see the test results such as the 
 
 The unit testing code itself is located in the [src/test/java](https://github.com/ENG1-Team-29/Assessment-2/tree/master/core/src/test/java/io/github/annabeths){:target="_blank"} source folder.
 
-We tested as much as we could to cover as much of the code as possible. We made sure ``every test passed`` before merging with the master branch. All components tests are required to meet a requirement or support another function that meets a requirement. Below is a list of our tests and their associated requirements.
+We tested as much as we could to cover as much of the code as possible. We made sure ``every test passed`` before merging with the master branch. All components tested are necessary to meet a requirement or support another function that meets a requirement. Below is a list of our tests and their associated requirements.
 
 <div align="center" style="max-height: 30em; overflow: auto;">
     <p align="center">List of Tests and Their Descriptions/Requirements</p>
