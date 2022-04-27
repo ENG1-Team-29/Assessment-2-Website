@@ -1,0 +1,268 @@
+Class Tested,Test Method Name,Description / Justification,Main Associated Requirement(s)
+AIBoat,testGetAngleToDestNull(),Sometimes the destination is null so we need to ensure the method does not throw an exception,FR_NPC_BOAT_MOVEMENT 
+AIBoat,testGetAngleToDest(),Test that the angle to the destination is accurate,FR_NPC_BOAT_MOVEMENT 
+AIBoat,testSetDestination(),Ensure setting the destination changes the target,FR_NPC_BOAT_MOVEMENT 
+AIBoat,testMoveToDestinationInBound(),Test the boat moves when both the boat and destination are in bounds,FR_NPC_BOAT_MOVEMENT 
+AIBoat,testMoveToDestinationOutBound(),Ensure the boat does not move when the destination would cause the boat to move out of bounds,FR_NPC_BOAT_MOVEMENT 
+AIBoat,testIsDestValidInvalid(),Test the boat can identify invalid targets,FR_NPC_BOAT_MOVEMENT 
+AIBoat,testIsDestValidValid(),Test the boat can identity valid targets,FR_NPC_BOAT_MOVEMENT 
+AIBoat,testGetNewRandomValidTarget(),Ensure the generated target is not null,FR_NPC_BOAT_MOVEMENT 
+AIBoat,testUpdateDestination(),Test the boat gets a new destination if it arrived at the current one,FR_NPC_BOAT_MOVEMENT 
+AIBoat,testUpdateHP(),Test the boat is destroyed if the health is zero,UR_NPC_BOATS
+AIBoat,testIdle(),Test the boat generates and goes to destinations when in idle,FR_NPC_BOAT_MOVEMENT 
+AttackBoat,testShoot(),Ensure two projectiles are generated at 180 degree difference – perpendicular to the boat,UR_COMBAT 
+AttackBoat,testDestroy(),Test the boat is removed if destroyed,UR_COMBAT 
+AttackBoat,testUpdateDestroy(),Test the boat is destroyed if the health is zero,UR_COMBAT 
+AttackBoat,testUpdateCallsAIUpdate(),Ensure the boat updates the AI state in the update method,UR_COMBAT /  FR_NPC_BOAT_MOVEMENT
+AttackBoat,testUpdateSwitchAIStates(),Ensure the appropriate method is called according to the AI state,UR_COMBAT /  FR_NPC_BOAT_MOVEMENT
+AttackBoat,testUpdateHasDest(),Ensure the boat always has a destination,FR_NPC_BOAT_MOVEMENT
+AttackBoat,testUpdateHasNoDest(),Ensure the boat always has a destination,FR_NPC_BOAT_MOVEMENT
+AttackBoat,testApproach(),The boat should set the destination the target object if the path is valid or should go into idle mode if not,UR_COMBAT /  FR_NPC_BOAT_MOVEMENT
+AttackBoat,testUpdateAIStateFoundTarget(),Ensure the boat is in different states according to the target boat’s distance,UR_COMBAT 
+AttackBoat,testUpdateAIStateNotFoundTarget(),Boat should be in idle state if no taget is found,UR_COMBAT 
+AttackBoat,testAttackNoShoot(),Boat should not shoot because the angle is wrong and time is wrong,UR_COMBAT 
+AttackBoat,testAttackShoot(),Boat should shoot because angle is correct and time is correct,UR_COMBAT 
+AttackBoat,testAttackShootWrongAngle(),Boat should not shoot because the angle is wrong,UR_COMBAT 
+Boat,testSetPosition(),Ensure setting the position is correct,UR_NPC_BOATS
+Boat,testDamageClamp(),Ensure the health doesn’t leave the bounds,UR_NPC_BOATS
+Boat,testIsDead(),Test the boat is declared dead correctly,UR_NPC_BOATS
+Boat,testDraw(),Ensure the draw method does not throw an error,UR_NPC_BOATS
+Boat,testRotation(),Ensure the boat rotates correctly,UR_NPC_BOATS
+Boat,testRotationConsistency(),Ensure the sprite and collision polygon rotate at the same time,UR_NPC_BOATS
+Boat,testRotationLimits(),Ensure the rotation is clamped between 0 and 360,UR_NPC_BOATS
+Boat,testCreateProjectile(),Test projectile is created at the correct angle with the correct values,UR_NPC_BOATS
+Boat,testMoveTowardsDesiredAngle(),Test the correct rotational direction is given from many various fractional inputs,FR_NPC_BOAT_MOVEMENT
+Boat,testMoveTowardsDesiredAngleAtZero(),Test the correct rotational direction is given from specific inputs,FR_NPC_BOAT_MOVEMENT
+Boat,testMoveTowardsDesiredAngleAt180(),Test the correct rotational direction is given from specific inputs,FR_NPC_BOAT_MOVEMENT
+Boat,testMoveTowardsDesiredAngleAt90(),Test the correct rotational direction is given from specific inputs,FR_NPC_BOAT_MOVEMENT
+Boat,testMoveTowardsDesiredAngleAt270(),Test the correct rotational direction is given from specific inputs,FR_NPC_BOAT_MOVEMENT
+Boat,testMoveTowardsDesiredAngleAt225(),Test the correct rotational direction is given from specific inputs,FR_NPC_BOAT_MOVEMENT
+EnemyBoat,testDestroy(),Test the boat can be destroyed,UR_COMBAT 
+EnemyBoat,testOnCollisionPlayer(),Ensure the player gets xp and plunder when colliding,UR_COMBAT / UR_EARN_PLUNDER / UR_EARN_XP 
+EnemyBoat,testOnCollisionProjectilePlayer(),Test the boat is damaged when hit with a player projectile,UR_COMBAT 
+EnemyBoat,testOnCollisionProjectileNonPlayer(),Test the boat ignores non-player projectiles,UR_COMBAT 
+EnemyBoat,testGetNearestTargetPlayerNear(),Ensure the player is targetted if within range,UR_COMBAT /  FR_NPC_BOAT_MOVEMENT
+EnemyBoat,testGetNearestTargetNothing(),Ensure the target is null if nothing is in range,UR_COMBAT /  FR_NPC_BOAT_MOVEMENT
+EnemyBoat,testGetNearestTargetFriendlyBoat(),Test that friendly boats are targetted if within range,UR_COMBAT /  FR_NPC_BOAT_MOVEMENT
+FriendlyBoat,testGetNearestTarget(),Test that the nearest target is selected out of multiple candidates,FR_NPC_BOAT_MOVEMENT
+FriendlyBoat,testGetNearestTargetNoEnemyBoats(),Ensure no target is selected if there are no enemy boats,FR_NPC_BOAT_MOVEMENT
+FriendlyBoat,testGetNearestTargetPlayer(),Ensure the boat does not target players,FR_NPC_BOAT_MOVEMENT
+FriendlyBoat,testOnCollisionProjectileNotPlayer(),Ensure boat is damaged by non-player projectiles,UR_NPC_BOATS
+FriendlyBoat,testOnCollisionProjectilePlayer(),Ensure boat is not damaged by player projectiles,UR_NPC_BOATS
+FriendlyBoat,testOnCollisionNonProjectile(),Ensure boat ignores collisions with other boats,FR_NPC_BOAT_COLLISION
+NeutralBoat,testDestroyKills(),Ensure destroy results in the boat being removed from the game,UR_NPC_BOATS 
+NeutralBoat,testDestroyDropsPowerupRandomly(),Test that the boat has a chance to drop a powerup,UR_POWER_UP
+NeutralBoat,testOnCollisionPlayerBoat(),Test that collision with a player results in xp and plunder,UR_EARN_PLUNDER / UR_EARN_XP
+NeutralBoat,testOnCollisionProjectileKill(),Test projectiles are removed when collided with boat,UR_NPC_BOATS 
+NeutralBoat,testOnCollisionProjectilePlayer(),Test boat is damaged when hit with a player projectile,UR_NPC_BOATS 
+NeutralBoat,testOnCollisionProjectileNotPlayer(),Test boat is damaged when hit with a non-player projectile,UR_NPC_BOATS 
+NeutralBoat,testOnCollisionOther(),Ensure boat ignores collisions with other boats,FR_NPC_BOAT_COLLISION
+PlayerBoat,testReceivePowerup(),Test player can pick up powerups,UR_POWER_UP
+PlayerBoat,testUpdatePowerup(),Test powerup time is decreased,UR_POWER_UP
+PlayerBoat,testUpdatePowerupRemove(),Test used powerups are removed,UR_POWER_UP
+PlayerBoat,testIsInvincible(),Test the player is invincible when the invincibility upgrade is active,UR_POWER_UP
+PlayerBoat,testGetDamageMul(),Test the damage multiplier is modified with the damage powerup,UR_COMBAT 
+PlayerBoat,testGetAngleBetweenMouseAndBoat(),Test the angle between the mouse and the boat,UR_COMBAT 
+PlayerBoat,testShootStockNormal(),Test the stock shoot generates two projectiles,UR_COMBAT 
+PlayerBoat,testShootStockBurst(),Test the burst shot generates multiple projectiles,UR_COMBAT 
+PlayerBoat,testHeal(),Test the player can heal,FR_HEALTH
+PlayerBoat,testProcessInputTurn(),Test the player rotates when correct keys are pressed,UR_SAIL
+PlayerBoat,testProcessInputMoveNoInput(),Ensure the boat does not move when no input is given,UR_SAIL
+PlayerBoat,testProcessInputMove(),,UR_SAIL
+PlayerBoat,testProcessInputMoveBack(),,UR_SAIL
+PlayerBoat,testProcessInputClick(),,UR_COMBAT 
+PlayerBoat,testProcessInputSpace(),,UR_COMBAT 
+PlayerBoat,testShootRay(),,UR_COMBAT 
+PlayerBoat,testShootTypes(),,UR_COMBAT 
+PlayerBoat,testOnCollisionPlayerProjectile(),,UR_COMBAT 
+PlayerBoat,testOnCollisionProjectile(),,UR_COMBAT 
+PlayerBoat,testOnCollisionBoat(),,UR_COMBAT / UR_NPC_BOATS
+PlayerBoat,testOnCollisionBoatInvincible(),,UR_COMBAT / UR_NPC_BOATS
+PlayerBoat,testOnCollisionCollege(),,FR_PLAYER_COLLISION
+PlayerBoat,testUpdate(),,UR_SAIL
+PlayerBoat,testUpdateRapidFire(),,UR_COMBAT 
+PlayerBoat,testUpdateEndgameAlive(),Game should not end during the playerboat update method if the player is alive,FR_HEALTH
+PlayerBoat,testUpdateEndgameDead(),Game should end if player is dead,FR_HEALTH
+PlayerBoat,testDestroy(),,UR_COMBAT 
+PlayerBoat,testUpgrade(),,FR_UPGRADE_IMPLEMENTATION
+PlayerBoat,testProcessPowerupInput(),,UR_POWER_UP
+PlayerBoat,testProcessPowerupInputNumPad(),,UR_POWER_UP
+PlayerBoat,testReceivePowerupLimit(),,UR_POWER_UP
+Powerup,testOnCollision(),Ensure powerup is removed from world if player collects it,UR_POWER_UP
+College,testIsInRange(),,UR_COMBAT
+College,testSetGetRange(),,UR_COMBAT
+College,testSetGetDamage(),,UR_COMBAT
+College,testSetGetFireRate(),,UR_COMBAT
+College,testSetGetInvulnerable(),,UR_COMBAT
+College,testHealth(),,FR_HEALTH
+College,testDamage(),,UR_COMBAT
+College,testDamageClamp(),,UR_COMBAT
+EnemyCollege,testShootAtDebugSkip(),,UR_COMBAT
+EnemyCollege,testShootAt(),,UR_COMBAT
+EnemyCollege,testDraw(),,FR_ENEMY_COLLEGE
+EnemyCollege,testUpdateChangesFire(),,FR_ENEMY_COLLEGE
+EnemyCollege,testUpdateShoot(),,FR_ENEMY_COLLEGE
+EnemyCollege,testUpdateDead(),,FR_ENEMY_COLLEGE
+EnemyCollege,testUpdateBoatNotInRange(),,FR_ENEMY_COLLEGE
+EnemyCollege,testHPString(),,FR_HEALTH
+EnemyCollege,testOnCollisionProjectileAliveNpj(),,FR_ENEMY_COLLEGE
+EnemyCollege,testOnCollisionProjectileAlivePj(),,FR_ENEMY_COLLEGE
+EnemyCollege,testOnCollisionProjectileAlivePjKill(),,FR_ENEMY_COLLEGE
+EnemyCollege,testOnCollisionProjectileInvulnerable(),,FR_BOSS_REQUIREMENTS
+EnemyCollege,testOnCollisionProjectileDead(),,FR_ENEMY_COLLEGE
+EnemyCollege,testOnCollisionNonProjectile(),,FR_ENEMY_COLLEGE
+EnemyCollege,testBecomeVulnerable(),,FR_BOSS_REQUIREMENTS
+EnemyCollege,testUpdateHpText(),,FR_HEALTH
+EnemyCollege,testCheckForSpawnEnemyBoat(),,
+PlayerCollege,testDraw(),,FR_HEALTH
+PlayerCollege,testUpdateHeal(),,
+PlayerCollege,testBoatSpawn(),,UR_NPC_BOATS
+PlayerCollege,testUpdate(),,
+PlayerCollege,testOnCollision(),,FR_PLAYER_COLLISION / FR_NPC_BOAT_COLLISION
+PlayerCollege,testUpdateSplashText(),,FR_HEALTH
+GameObject,testCenterNullSprite(),,
+GameObject,testCenterNullPosition(),,
+GameObject,testCenter(),,
+GameObject,testCenterOffset(),,
+GameObject,testSetCenter(),,
+GameObject,testSetSprite(),,
+PhysicsObject,testCollision(),,FR_PLAYER_COLLISION / FR_NPC_BOAT_COLLISION
+GameController,testTimerRange(),Test that the timer is between 5 and 10 minutes,UR_WIN_TIME
+GameController,testLogicTimer(),Test that the time decreases,UR_DEFEAT / UR_WIN_TIME
+GameController,testGameOver(),,UR_DEFEAT
+GameController,testGameOverTimeUp(),,UR_DEFEAT
+GameController,testLogicBossDefeated(),,FR_BOSS_DEFEAT
+GameController,testLogicCallsUpdates(),,
+GameController,testLogicIncreaseXpNotPlunder(),,FR_XP_EARN 
+GameController,testLogicNotIncreaseXpPlunderUnderTime(),,FR_XP_EARN 
+GameController,testRender(),,
+GameController,testRenderDebug(),,
+GameController,testRenderRay(),,
+GameController,testIsEnemyCollegeNearPlayer(),,FR_XP_EARN / FR_PLAYER_COMBAT
+GameController,testIsEnemyBoatNearPlayer(),,FR_XP_EARN / FR_PLAYER_COMBAT
+GameController,testIsPlayerInDanger(),,FR_XP_EARN / FR_PLAYER_COMBAT
+GameController,testUpdateObjects(),,FR_PLAYER_COLLISION / FR_NPC_BOAT_COLLISION
+GameController,testUpdateObjectsCollision(),,FR_PLAYER_COLLISION / FR_NPC_BOAT_COLLISION
+GameController,testAddXP(),,FR_XP_EARN
+GameController,testCollegeDestroyed(),,FR_OBSTACLES / FR_ENEMY_COLLEGE / FR_BOSS_DEFEAT
+GameController,testClearKilledObjects(),,FR_OBSTACLES
+GameController,testGetXpLevel(),,FR_XP_SPEND / NFR_XP_GOLD_UPDATES 
+GameController,testGetXpInLevel(),,FR_XP_SPEND / NFR_XP_GOLD_UPDATES 
+GameController,testSubtractXPLevels(),,FR_XP_SPEND
+GameController,getXpRequiredForLevel(),,FR_XP_SPEND
+GameController,testGetXpRequiredForNextLevel(),,FR_XP_SPEND
+GameController,testResize(),,UR_SCALABILITY
+GameController,testGenerateWeather(),,FR_BAD_WEATHER
+GameController,testUpdateGenerateWeather(),,FR_BAD_WEATHER
+GameController,testMockForHUD(),Since the instruction page displays a HUD object we need a GameController object with minimal data so the HUD can function but not take up lots of memory,
+GameDifScreen,testSetupButtons(),,UR_SELECT_DIFFICULTY
+GameDifScreen,testSetupLabels(),,UR_SELECT_DIFFICULTY
+GameDifScreen,testClickListener(),,UR_SELECT_DIFFICULTY
+GameDifScreen,testRender(),,UR_SELECT_DIFFICULTY
+GameDifScreen,testKeyPress(),,UR_SELECT_DIFFICULTY
+GameDifScreen,testEscKeyPress(),,UR_SELECT_DIFFICULTY
+GameDifScreen,testDispose(),Ensure the stage is disposed of when dispose is called,UR_SELECT_DIFFICULTY
+GameOverScreen,testRender(),,
+GameOverScreen,testGotoScreensNothingPressed(),,
+GameOverScreen,testGotoScreensRPressed(),,
+GameOverScreen,testGotoScreensEnterPressed(),,
+GameWinScreen,testRender(),,
+GameWinScreen,testReturnToMenu(),,
+Menu,testConstruction(),Ensure the Menu can be instantiated without exceptions,
+Menu,testRender(),,
+Menu,testEnterPressedBeforeInstruction(),,
+Menu,testEnterPressedAfterInstruction(),,
+Menu,testToggleInstructions(),Ensure the instructions can be toggled,
+Menu,testToggleInstructionButton(),Ensure the instructions can be toggled by a button,
+Menu,testEscPressed(),,
+Splash,testRender(),,
+Splash,testRenderSkip(),,
+Splash,testRenderShard(),,
+Splash,testFade(),Test that the splash fades at the correct time,
+Difficulty,testNumMinesCorrect(),,UR_SELECT_DIFFICULTY
+Difficulty,testIfKrakenIsPresent(),,UR_SELECT_DIFFICULTY
+eng1game,testConstructor(),Test the eng1game can be constructed,
+eng1game,testRemoveGameScreen(),Test the disposal of the gamescreen – used for creating new games,
+eng1game,testSetFullscreen(),Test that the fullscreen function calls the correct gdx method,UR_SCALABILITY
+eng1game,testSetDifficulty(),Ensure the difficulty is set in the game screen without error,UR_SELECT_DIFFICULTY
+eng1game,testGotoScreenSplash(),Ensure the game goes to the correct screen,
+eng1game,testGotoScreenMenu(),Ensure the game goes to the correct screen,
+eng1game,testGotoScreenGame(),Ensure the game goes to the correct screen,
+eng1game,testGotoScreenGameOver(),Ensure the game goes to the correct screen,
+eng1game,testGotoScreenGameWin(),Ensure the game goes to the correct screen,
+eng1game,testGotoScreenGameDif(),Ensure the game goes to the correct screen,
+ResourceManager,testInit(),Ensure the resource manager doesn’t throw an error when loading assets,
+GameMap,testUpdate(),Ensure the update method doesn’t throw an error,
+GameMap,testDraw(),Ensure the draw background method is called,
+WaterBackground,testConstructor(),Ensure the class can be constructed without error,
+WaterBackground,testUpdate(),Ensure the texture changes with time,
+WaterBackground,testDraw(),Ensure the objects are drawn,
+Kraken,testDamage(),Ensure the damage method functions within bounds,FR_OBSTACLES / FR_BOSS_REQUIREMENTS
+Kraken,testOnCollisionBoat(),Ensure colliding boats are damaged,FR_OBSTACLES
+Kraken,testOnCollisionProj(),Ensure projectiles do damage ,FR_OBSTACLES
+Kraken,testShoot(),Ensure the shoot function is only called when player is in range,FR_OBSTACLES
+Kraken,testShotgunShot(),Ensure the shotgun shot method generates 6 objects,FR_OBSTACLES
+Kraken,testMove(),Ensure the kraken moves position,FR_OBSTACLES
+Kraken,testUpdateShoot(),Ensure the kraken shoots if enough time has passed,FR_OBSTACLES
+Kraken,testUpdateNoShoot(),Ensure the kraken doesn’t shoot if not enough time has passed,FR_OBSTACLES
+Kraken,testDirectionSprite(),Ensure the kraken texture changes,FR_OBSTACLES
+Mine,testOnCollisionVulnerable(),Ensure mines do damage when player is vulnerable,FR_OBSTACLES
+Mine,testOnCollisionInvincible(),Ensure mines do not do damage when player is invincible,FR_OBSTACLES
+Mine,testOnCollisionNonBoat(),Ensure mines are not affected by non-boat objects,FR_OBSTACLES
+Weather,testFade(),Test that weather fades in gradually,FR_BAD_WEATHER
+Weather,testToggleLightning(),Ensure lightning can be toggled,FR_BAD_WEATHER
+Weather,testOnCollisionDamage(),Ensure objects are damaged when lightning is enabled,FR_BAD_WEATHER
+Weather,testOnCollisionNoDamage(),Ensure objects are ignored when lightning is disabled,FR_BAD_WEATHER
+Weather,testOnCollisionInvincible(),Ensure lightning doesn’t harm invincible players,FR_BAD_WEATHER
+Weather,testOnCollisionNonBoat(),Test weather ignores non-boat objects,FR_BAD_WEATHER
+Weather,testMove(),Test weather can move,FR_BAD_WEATHER
+Weather,testMoveOutOfBounds(),Ensure weather is killed if it moves out of bounds,FR_BAD_WEATHER
+Weather,testUpdateDamage(),Test methods are called when in damage mode,FR_BAD_WEATHER
+Weather,testUpdateNoDamage(),Test methods are called when in normal mode,FR_BAD_WEATHER
+Weather,testGetDirection(),Ensure the direction is not null,FR_BAD_WEATHER
+ProjectileRay,testIntersection(),,FR_PLAYER_COMBAT
+ProjectileRay,testIntersectionSorting(),,FR_PLAYER_COMBAT
+ProjectileRay,testLimitIntersection(),,FR_PLAYER_COMBAT
+ProjectileRay,testFireMethod(),,FR_PLAYER_COMBAT
+ProjectileRay,testEmptyFireMethod(),,FR_PLAYER_COMBAT
+ProjectileRay,testRemoveAfterShown(),,FR_PLAYER_COMBAT
+ProjectileRay,testGetCenter(),,FR_PLAYER_COMBAT
+ProjectileRay,testFarthestHitPointOneObj(),,FR_PLAYER_COMBAT
+ProjectileRay,testFarthestHitPointTwoObj(),,FR_PLAYER_COMBAT
+ProjectileRay,testGetIntersectingObjsPlayer(),,FR_PLAYER_COMBAT
+Projectile,testProjectileDespawn(),,FR_PLAYER_COMBAT / FR_ENEMY_COLLEGE
+Projectile,testSpeedIsEqual(),,FR_PLAYER_COMBAT / FR_ENEMY_COLLEGE
+Projectile,testProjectileCollision(),,FR_PLAYER_COMBAT / FR_ENEMY_COLLEGE
+Projectile,testDraw(),,FR_PLAYER_COMBAT / FR_ENEMY_COLLEGE
+Projectile,testGetDamage(),,FR_PLAYER_COMBAT / FR_ENEMY_COLLEGE
+Projectile,testProjDataGetTexture(),,FR_PLAYER_COMBAT / FR_ENEMY_COLLEGE
+Projectile,testProjDataGetSize(),,FR_PLAYER_COMBAT / FR_ENEMY_COLLEGE
+HUD,testTimeStringFormatting(),Test the string displayed to the user to display the time left,UR_WIN_TIME
+HUD,testGetUpgradeText(),,FR_UPGRADE_CHOICE
+HUD,testBarKnob(),,NFR_XP_GOLD_UPDATES / FR_HEALTH
+HUD,testSetupStyles(),,NFR_XP_GOLD_UPDATES
+HUD,testSetupProgressBars(),,NFR_XP_GOLD_UPDATES / FR_HEALTH
+HUD,testSetupShopMenu(),,FR_UPGRADE_CHOICE
+HUD,testSetupShopButton(),,FR_UPGRADE_CHOICE
+HUD,testUpdateShopMenu(),,FR_UPGRADE_CHOICE / UR_SPEND_XP
+HUD,testUpdateShopMenuPlunder(),,FR_UPGRADE_CHOICE / UR_SPEND_PLUNDER
+HUD,testSetupPowerups(),,UR_POWER_UP
+HUD,testResize(),,UR_SCALABILITY
+HUD,testSetupLabels(),,NFR_XP_GOLD_UPDATES
+HUD,testUpdate(),,NFR_XP_GOLD_UPDATES
+HUD,testUpdatePowerup(),,UR_POWER_UP
+HUD,testRandomizeUpgrades(),,FR_UPGRADE_CHOICE
+HUD,testBuyUpgrade(),,FR_UPGRADE_IMPLEMENTATION
+HUD,testDraw(),,NFR_XP_GOLD_UPDATES / FR_HEALTH
+HUD,testToggleMenuNoShop(),,FR_UPGRADE_CHOICE
+HUD,testToggleMenu(),,FR_UPGRADE_CHOICE
+HUD,testToggleMenuOpen(),,FR_UPGRADE_CHOICE
+HUD,testPressUpgrade1(),,FR_UPGRADE_CHOICE / UR_SPEND_XP
+HUD,testPressUpgrade1Plunder(),,FR_UPGRADE_CHOICE / UR_SPEND_PLUNDER
+HUD,testPressUpgrade1NoPlunder(),,FR_UPGRADE_CHOICE
+HUD,testPressUpgrade2(),,FR_UPGRADE_CHOICE / UR_SPEND_XP
+HUD,testPressUpgrade2Plunder(),,FR_UPGRADE_CHOICE / UR_SPEND_PLUNDER
+HUD,testEnterExit1(),Required to prevent player from shooting while in the shop,
+HUD,testEnterExit2(),Required to prevent player from shooting while in the shop,
+HUD,testEnterExitMenu(),Required to prevent player from shooting while in the shop,
+HUD,testShopButton(),,FR_UPGRADE_CHOICE
