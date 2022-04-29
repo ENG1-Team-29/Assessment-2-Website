@@ -4,3 +4,26 @@ MT_GAME_TIME_WINNABLE,Can the game actually be won within the time limit,UR_WIN_
 MT_FINAL_OBJECTIVE,Can the central college be defeated,UR_WIN_TIME,PASS
 MT_FINAL_OBJECTIVE_BLOCKED,Is the central college protected until all other objectives completed,UR_WIN_TIME,PASS
 MT_PLAY_WITHOUT_COLOR,Can the game be played without the use of color,UR_ACCESSIBILITY,PASS
+MT_PLAYER_LOSS_TIME,Does the player lose once the timer runs out,UR_DEFEAT,PASS
+MT_PLAYER_LOSS_COMBAT,Can the player lose in combat,UR_DEFEAT,PASS
+MT_PLAYER_LOSS_COLLISIONS,Can the player lose after sufficient collisions with other ships,UR_DEFEAT,PASS
+MT_CHILD_FRIENDLY,Is the game child friendly,UR_CHILD_FRIENDLY,PASS
+MT_COLLEGE_COMBAT,Can the player combat other colleges,UR_COMBAT,PASS
+MT_NPC_BOATS,Are there NPC boats sailing around the map,UR_NPC_BOATS,PASS
+MT_SAIL,Can the player sail around the lake,UR_SAIL,PASS
+MT_SPEND_XP,Can the player use XP for upgrades,UR_SPEND_XP,PASS
+MT_EARN_XP,Can the player earn XP,UR_EARN_XP,PASS
+MT_PLATFORMS,Can the game run on different platforms,UR_PLATFORMS,PASS
+MT_SCALABILITY,Can the game scale to different resolutions,UR_SCALABILTY,PASS
+MT_MAKE_ALLIES,Can the player make other colleges allies once defeated,UR_MAKE_ALLIES,PASS
+MT_COLLEGES_AMOUNT,Are the at least three colleges on the map,UR_COLLEGES_AMOUNT,PASS
+MT_SPEND_PLUNDER,Can the player spend gold for upgrades,UR_SPEND_PLUNDER,PASS
+MT_EARN_PLUNDER,Can the player earn plunder from defeating enemy colleges and ships,UR_EARN_PLUNDER,PASS
+MT_AVOID_OBSTACLES,Are there obstacles to avoid,UR_AVOID_OBSTACLES,PASS
+MT_POWER_UP,Are there power ups that grant temporary effects,UR_POWER_UP,PASS
+MT_SELECT_DIFFICULTY,Are there multiple difficulties to choose from,UR_SELECT_DIFFICULTY,PASS
+MT_SAVE_LOAD,----------,---------,--------
+MT_BOSS_DEFEAT,Can the central college be defeated,FR_BOSS_DEFEAT,PASS
+MT_BOSS_REQUIREMENTS,Is there a barrier preventing the player from defeating the final boss before other colleges are defeated,FR_BOSS_REQUIREMENTS,PASS
+MT_SHOW_HEALTH,Does the game display the health of players and colleges,FR_HEALTH,PASS
+MT_WEATHER,Does the game include bad weather as an obstacle,FR_BAD_WEATHER,PASS
