@@ -9,10 +9,15 @@ layout: default
 
 # Home
 
-![screenshot of game here, or like a logo]()
+![game logo](/img/game_logo.png)
 
-block of text here describing the game
+Our product is a top down pirate simulator set in an alternate modern day York.
+The University campus lake has flooded Heslington! The colleges have provided a safe haven for students,
+in return for help conquering the lake! You must help your college defeat other colleges, or meet your demise!
 
-![more screenshots]()
+![game screenshot featuring a kraken](/img/kraken.png)
 
-discuss features of the game here
+The Biology lab has recently had a breakout of a mutated squid, so sail the lake with caution.
+The moon has recently been orbiting the planet dangerously close, so the lake has been getting deadlier,
+including bizzare weather phenomenons. Shard's of the moons have splashed into the lake and students have been reporting
+strange glowing bubbles that transforms ships temporarily. Will you discover the next weird occurence?
