@@ -9,4 +9,10 @@ layout: default
 
 # Home
 
-![mario](/img/mario.jpg)
+![screenshot of game here, or like a logo]()
+
+block of text here describing the game
+
+![more screenshots]()
+
+discuss features of the game here
