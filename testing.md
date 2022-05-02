@@ -35,7 +35,7 @@ permalink: /testing/
 
 # Testing
 [![Java CI with Gradle](https://github.com/ENG1-Team-29/Assessment-2/actions/workflows/gradle.yml/badge.svg?branch=master)](https://github.com/ENG1-Team-29/Assessment-2/actions/workflows/gradle.yml){:target="_blank"}
-[![codecov](https://codecov.io/gh/ENG1-Team-29/Assessment-2/branch/master/graph/badge.svg?token=D2BMT48XY9)](https://codecov.io/gh/ENG1-Team-29/Assessment-2)
+[![codecov](https://codecov.io/gh/ENG1-Team-29/Assessment-2/branch/master/graph/badge.svg?token=D2BMT48XY9)](https://codecov.io/gh/ENG1-Team-29/Assessment-2){:target="_blank"}
 
 [Link to testing deliverable](https://docs.google.com/document/d/14p1r_HZkSboNIkHY6SrWJnr87kKzKhqXc0rLkRQXc-c/edit?usp=sharing){:target="_blank"} <br />
 
