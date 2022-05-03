@@ -15,6 +15,15 @@ permalink: /architecture/
     >
 </a>
 
-<a href="/img/full.png">
-    <p>Boats</p>
+<a href="/img/boats.png">
+    Boats
 </a>
+
+<a href = "/img/gamescreens.png">GameScreens</a>
+<a href = "/img/gamegenerics.png">GameGenerics</a>
+<a href = "/img/generalcontrol.png">GeneralControl</a>
+<a href = "/img/Collectables.png">Collectables</a>
+<a href = "/img/colleges.png">Colleges</a>
+<a href = "/img/obstacles.png">Obstacles</a>
+<a href = "/img/projectiles.png">Projectiles</a>
+<a href = "/img/ui.png">UI</a>
