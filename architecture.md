@@ -9,7 +9,7 @@ permalink: /architecture/
 <img src="https://www.mario.shardsoftware.tk/img/full.png" alt="UML diagram" usemap="#image-map" />
 <map name="image-map">
 {% for s in site.collections['image-map'] %}
-    <area shape="poly" coords="{{ s.map.coord }}" 
+    <area shape="rect" coords="{{ s.map.coord }}" 
           href="{{ site.baseurl }}{{ s.url }}" 
           alt="{{ s.name }}" title="{{ s.name }}" >
 {% endfor %}
