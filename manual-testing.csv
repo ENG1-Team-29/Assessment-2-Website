@@ -22,7 +22,7 @@ MT_EARN_PLUNDER,Can the player earn plunder from defeating enemy colleges and sh
 MT_AVOID_OBSTACLES,Are there obstacles to avoid,UR_AVOID_OBSTACLES,PASS
 MT_POWER_UP,Are there power ups that grant temporary effects,UR_POWER_UP,PASS
 MT_SELECT_DIFFICULTY,Are there multiple difficulties to choose from,UR_SELECT_DIFFICULTY,PASS
-MT_SAVE_LOAD,----------,---------,--------
+MT_SAVE_LOAD,Can a game be saved - and then loaded again in another session (i.e. after the game has been closed)?,UR_SAVE_LOAD,PASS
 MT_BOSS_DEFEAT,Can the central college be defeated,FR_BOSS_DEFEAT,PASS
 MT_BOSS_REQUIREMENTS,Is there a barrier preventing the player from defeating the final boss before other colleges are defeated,FR_BOSS_REQUIREMENTS,PASS
 MT_SHOW_HEALTH,Does the game display the health of players and colleges,FR_HEALTH,PASS
