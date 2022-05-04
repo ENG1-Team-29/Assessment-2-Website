@@ -9,6 +9,8 @@ layout: default
 
 # Home
 
+Latest Version: [download here](https://github.com/ENG1-Team-29/Assessment-2/releases/latest){:target="_blank"}
+
 ![game logo](/img/game_logo.png)
 
 In an alternative Universe, the University of York is built around a very large lake,
