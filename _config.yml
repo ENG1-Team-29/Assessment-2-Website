@@ -2,7 +2,7 @@ title: Shard Software
 description: ENG1 Team 29
 markdown: kramdown
 theme: jekyll-theme-hacker
-url: "https://www.mario.shardsoftware.tk"
+baseurl: /Assessment-2-Website
 plugins:
   - jekyll-sitemap
   

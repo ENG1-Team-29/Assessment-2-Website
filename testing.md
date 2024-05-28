@@ -7,7 +7,7 @@ permalink: /testing/
 <script>
     function loadDataIntoTable(csvFile, tableName) {
             $.ajax({
-                url: `/${csvFile}.csv`,
+                url: `{{ site.baseurl }}/${csvFile}.csv`,
                 dataType: 'text',
             }).done(function (data) {
                 var allRows = data.split(/\r?\n|\r/); // get all csv lines
